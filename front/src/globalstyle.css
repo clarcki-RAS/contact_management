@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Quicksand font */
+
+@font-face {
+    font-family: 'QuickSand';
+    src: url('/assets/fonts/Quicksand-Light.ttf') format('trueType');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuickSand';
+    src: url('/assets/fonts/Quicksand-Regular.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuickSand';
+    src: url('/assets/fonts/Quicksand-Medium.ttf') format('trueType');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuickSand';
+    src: url('/assets/fonts/Quicksand-SemiBold.ttf') format('trueType');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuickSand';
+    src: url('/assets/fonts/Quicksand-Bold.ttf') format('trueType');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Barlow font */
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Light.ttf') format('trueType');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Regular.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Medium.ttf') format('trueType');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-SemiBold.ttf') format('trueType');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Bold.ttf') format('trueType');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-ExtraBold.ttf') format('trueType');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Paypal Sans Font */
+
+@font-face {
+    font-family: 'Paypal-Sans';
+    src: url('/assets/fonts/Paypal-Sans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paypal-Sans';
+    src: url('/assets/fonts/Paypal-Sans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paypal-Sans';
+    src: url('/assets/fonts/Paypal-Sans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paypal-Sans';
+    src: url('/assets/fonts/Paypal-Sans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paypal-Sans';
+    src: url('/assets/fonts/Paypal-Sans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Visa Dialect font*/
+
+@font-face {
+    font-family: 'Visa-Dialect';
+    src: url('/assets/fonts/Visa-Dialect-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Visa-Dialect';
+    src: url('/assets/fonts/Visa-Dialect-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Visa-Dialect';
+    src: url('/assets/fonts/Visa-Dialect-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Visa-Dialect';
+    src: url('/assets/fonts/Visa-Dialect-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Visa-Dialect';
+    src: url('/assets/fonts/Visa-Dialect-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-btn{
+   @apply transition-all duration-150 hover:text-lg ease-in; 
+   @apply  text-theme-color-3 hover:text-theme-color-2;
+   @apply mx-auto px-3 font-semibold cursor-pointer;
+}
+
+.view-more-btn{
+    @apply hover:bg-theme-color-2 hover:text-white border border-theme-color-1 text-theme-color-1;
+    @apply flex items-center justify-center;
+    @apply pb-1 h-10 w-24 my-2 font-medium;
+    @apply transition ease-out duration-200;
+}
+
+.card-title{
+    @apply font-quicksand font-semibold text-xl;
+    @apply flex items-center justify-center;
+    @apply pb-1 z-50 h-16 w-80;
+    @apply absolute transform translate-x-1/2 translate-y-1/2 top-40 right-1/2;
+    @apply shadow-sm bg-opacity-50 text-opacity-100 bg-theme-color-4 text-white;
+}
+
+.logo-btn{
+    @apply transition duration-200 ease-in-out;
+    @apply transform hover:scale-105;
+    @apply border hover:shadow-lg hover:border-theme-color-1;
+}
+
+.paypal-btn{
+    @apply bg-paypal-midnight-blue text-white;
+    @apply font-paypal-sans font-extrabold;
+    @apply rounded-3xl w-full py-3;
+    @apply transition duration-200 ease-in-out;
+    @apply transform hover:scale-105;
+}
+
+.visa-btn {
+    @apply transition duration-200 ease-in-out;
+    @apply text-opacity-100 bg-opacity-80 hover:bg-opacity-100 w-full;
+}
+
+.project-btn{
+    @apply w-full py-2 font-quicksand font-bold ;
+    @apply  bg-theme-color-3 text-white hover:bg-white hover:text-theme-color-2 hover:border hover:border-theme-color-2;
+    @apply transform hover:scale-105 ease-out duration-200;
+}
